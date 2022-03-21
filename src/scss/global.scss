@@ -1,0 +1,35 @@
+@import './reset.scss';
+
+body {
+    background-color: rgb(249, 255, 225);
+    // font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col {
+    flex: 1 0 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@for $i from 1 to 12 {
+    .col-#{$i} {
+        width: calc(100 / 12 * $i) + #{"%"};
+        flex: 0 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

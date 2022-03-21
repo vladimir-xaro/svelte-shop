@@ -1,1 +1,1 @@
-# svelte-shop
+# vladimir-xaro/svelte-shop
